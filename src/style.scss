@@ -1,0 +1,148 @@
+$seethroughDiv: rgba($color: #303030, $alpha: 0.8);
+$body-font: 'Bruno Ace', cursive;
+body {
+    margin: 0px;
+}
+
+
+#content {
+    margin: 0px;
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url("./restaurant.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    gap: 3ch;
+
+    .header {
+        background-color: $seethroughDiv;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 3ch;
+
+        .title {
+            font-family: 'Bruno Ace SC', cursive;
+            font-size: 48px;
+            height: 75%;
+            margin-top: 5%;
+            margin-bottom: 3%;
+            font-size: 6ch;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav {
+            font-family: 'Bruno Ace SC', cursive;
+            height: 15%;
+            margin-bottom: 2%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6ch;
+            .tab{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .main{
+        min-height: 300px;
+        width: 60%;
+ 
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        gap:1ch;
+        justify-content: center;
+        background-color: $seethroughDiv;
+        width: 100%;
+        a{
+            img{
+                height:20px;
+            }
+        }
+    }
+}
+
+
+
+
+.landingPage {
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        background-color: $seethroughDiv;
+
+        .article {
+            font-family: $body-font;
+            font-size: 24px;
+            color: aliceblue;
+        }
+    }
+
+
+}
+
+
+.about{
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: $seethroughDiv;
+
+        .article {
+            font-family: $body-font;
+            font-size: 16px;
+            color: aliceblue;
+        }
+
+    }
+
+}
+
+
+
+
+
+
+.menu{
+    .main{
+        display: grid;
+        height:fit-content;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, clamp(130px, 25%, 300px));
+        background-color: $seethroughDiv;
+
+        .dish{
+            background-color: aliceblue;
+            color:#303030;
+            margin:1ch;
+            height:132px;
+            font-size: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            text-align:center;
+        }
+
+    }
+
+
+}

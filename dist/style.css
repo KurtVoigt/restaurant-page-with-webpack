@@ -1,0 +1,113 @@
+body {
+  margin: 0px;
+}
+
+#content {
+  margin: 0px;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url("./restaurant.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+  gap: 3ch;
+}
+#content .header {
+  background-color: rgba(48, 48, 48, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 3ch;
+}
+#content .header .title {
+  font-family: "Bruno Ace SC", cursive;
+  font-size: 48px;
+  height: 75%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  font-size: 6ch;
+  display: flex;
+  align-items: center;
+}
+#content .header .nav {
+  font-family: "Bruno Ace SC", cursive;
+  height: 15%;
+  margin-bottom: 2%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6ch;
+}
+#content .header .nav .tab {
+  cursor: pointer;
+}
+#content .main {
+  min-height: 300px;
+  width: 60%;
+}
+#content .footer {
+  display: flex;
+  align-items: center;
+  gap: 1ch;
+  justify-content: center;
+  background-color: rgba(48, 48, 48, 0.8);
+  width: 100%;
+}
+#content .footer a img {
+  height: 20px;
+}
+
+.landingPage .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  background-color: rgba(48, 48, 48, 0.8);
+}
+.landingPage .main .article {
+  font-family: "Bruno Ace", cursive;
+  font-size: 24px;
+  color: aliceblue;
+}
+
+.about .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(48, 48, 48, 0.8);
+}
+.about .main .article {
+  font-family: "Bruno Ace", cursive;
+  font-size: 16px;
+  color: aliceblue;
+}
+
+.menu .main {
+  display: grid;
+  height: fit-content;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, clamp(130px, 25%, 300px));
+  background-color: rgba(48, 48, 48, 0.8);
+}
+.menu .main .dish {
+  background-color: aliceblue;
+  color: #303030;
+  margin: 1ch;
+  height: 132px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
